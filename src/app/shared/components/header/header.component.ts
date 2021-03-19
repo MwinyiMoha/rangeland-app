@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  links = [
+    { title: 'Home', fragment: '' },
+    { title: 'Map', fragment: 'map' },
+    { title: 'Datasets', fragment: 'datasets' }
+  ];
 
-  ngOnInit(): void {
-  }
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void { }
 
 }
