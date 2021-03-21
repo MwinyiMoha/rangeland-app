@@ -5,3 +5,18 @@
 
 @import '~ol/ol.css';
 @import '~ol-layerswitcher/dist/ol-layerswitcher.css';
+
+/* Global classes for content organization*/
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.full-height {
+  height: 100%;
+}
